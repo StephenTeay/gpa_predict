@@ -22,7 +22,7 @@ with st.sidebar:
     st.header("📋 Student Information")
     
     # Demographic inputs
-    age = st.slider("Age", 15, 18, 16)
+    age = st.slider("Age", 15, 27, 16)
     gender = st.selectbox("Gender", ["Female", "Male"])
     ethnicity = st.selectbox("Ethnicity", ["Group 0", "Group 1", "Group 2", "Group 3"])
     
