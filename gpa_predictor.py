@@ -24,7 +24,16 @@ with st.sidebar:
     # Demographic inputs
     age = st.slider("Age", 15, 18, 16)
     gender = st.selectbox("Gender", ["Female", "Male"])
-    ethnicity = st.selectbox("Ethnicity", ["Group 0", "Group 1", "Group 2", "Group 3"])
+    ethnicity = st.selectbox("Ethnicity", ["Yoruba", "Hausa", "Ibo", "Others"])
+    if ethnicity== "Yoruba":
+        ethnicity = "Group 0"
+    elif ethnicity =="Hausa":
+        ethnicity = "Group 1"
+    elif ethnicity == "Ibo":
+        ethnicity = "Group 2"
+    else:
+        ethnicity = "Group 3"
+
     
     # Academic inputs
     study_time = st.slider("Weekly Study Time (hours)", 0.0, 20.0, 10.0, 0.5)
